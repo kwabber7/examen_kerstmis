@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #faf7f3;
+}
+
+.button {
+    display: inline-block;
+    padding: 1em 3em;
+    border: 1.5px solid #ccc;
+    background-color: #faf7f3;
+    color: #333;
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    letter-spacing: 2px;
+    border-radius: 4px;
+    margin:  1.5em 0 5em;
+    transition: 0.5s;
+}
+
+.button:hover {
+    background: black;
+    color: white;
+}
+
+.intro_homepagina {
+    text-align: center;
+}
+
+.logo_website_body {
+    max-width: 60%;
+    padding: 3em 15% 0em;
+}
+
+section img {
+    max-width: 100%;
+    margin-bottom: 3em;
+}
+
+h1 {
+    text-transform: uppercase;
+}
+
+h1,
+p {
+    font-family: "Kedebideri", sans-serif;
+    font-weight: 500;
+    color: #383238;
+    max-width: 60%;
+    padding: 0 20% 0.5em;
+}
+
+.lower_part p {
+    text-align: start;
+}
+
+@media (min-width: 750px) {
+
+    .upper_part {
+        display: flex;
+        flex: 4fr 5fr;
+    }
+
+    .logo_website_body {
+        max-width: 55%;
+        padding: 19% 15% 0em;
+    }
+
+    .lower_part {
+        display: flex;
+        flex: 5fr 4fr;
+        align-items: center;
+    }
+}
+

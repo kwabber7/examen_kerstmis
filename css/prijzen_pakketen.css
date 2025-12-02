@@ -1,0 +1,251 @@
+:root {
+    --color-bg: #faf7f3;
+    --color-text: #1c1c1c;
+    --font-large: 3em;
+    --font-medium: 1.2em;
+    --max-width: 100%;
+}
+
+body {
+    margin: 0;
+    background: var(--color-bg);
+    font-family: Arial, sans-serif;
+    color: var(--color-text);
+    line-height: 1.5;
+}
+
+section {
+    margin: 0 auto;
+    max-width: var(--max-width);
+    padding: 2em;
+}
+
+h1 {
+    font-family: "Kedebideri", sans-serif;
+    font-weight: 500;
+    color: #383238;
+    font-size: 2.5em;
+    line-height: 1.15;
+    margin-bottom: 2em;
+}
+
+a {
+    color: var(--color-text);
+}
+
+a:hover {
+    font-size: 1.1em;
+    transition: 0.5s;
+}
+
+.section-contact {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 3em;
+    padding: 5em 3em;
+    max-width: var(--max-width);
+    margin: 0 auto;
+}
+
+.contact-info {
+    flex: 1 1 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contact-info h1 {
+    font-size: var(--font-large);
+    margin-bottom: 2em;
+}
+
+.contact-info p {
+    font-size: var(--font-medium);
+    margin-bottom: 2em;
+}
+
+.btn-contact,
+.contact button {
+    display: inline-block;
+    padding: 1em 3em;
+    border: 0.1em solid #ccc; 
+    background-color: var(--color-bg);
+    color: #333;
+    font-family: Arial, sans-serif;
+    font-size: 0.75em; 
+    letter-spacing: 0.13em; 
+    border-radius: 0.25em; 
+    margin: 1.5em 0 5em;
+    transition: background 0.5s, color 0.5s;
+    cursor: pointer;
+}
+
+.btn-contact:hover,
+.contact button:hover {
+    background: black;
+    color: white;
+}
+
+.contact-image {
+    flex: 1 1 55%;
+    display: flex;
+}
+
+.contact-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.title-image-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2.5em; 
+    margin-bottom: 3.125em; 
+}
+
+.title-image-top img {
+    max-width: 60%;
+    border-radius: 0.5em; 
+    object-fit: cover;
+}
+
+.title-image-top h1 {
+    font-size: 2.5em;
+}
+
+.contact {
+    text-align: center;
+    margin-bottom: 2.5em; 
+}
+
+.contact p {
+    font-size: 1em;
+    margin-bottom: 1.25em; 
+    line-height: 1.6;
+}
+
+section+p {
+    text-align: center;
+    font-size: 1.1em;
+    max-width: 800px; 
+    margin: 0 auto 3.75em; 
+    line-height: 1.6;
+    font-style: italic;
+}
+
+.pakket-section {
+    padding: 1.5em;
+}
+
+.pakketten {
+    display: flex;
+    gap: 1.25em;
+    justify-content: center;
+    flex-wrap: wrap;
+    line-height: 1.6;
+}
+
+.pakket {
+    background: #f4e8c6;
+    width: 300px;
+    padding: 1.5em; 
+    display: flex;
+    flex-direction: column;
+    border-radius: 1em; 
+    box-shadow: 0 0.5em 1.125em rgba(0, 0, 0, 0.15); 
+    text-align: left;
+    transition: transform 0.3s;
+}
+
+.pakket ul {
+    padding: 0;
+    margin: 1.25em 0; 
+    list-style: none;
+}
+
+.pakket li {
+    margin-bottom: 0.4em; 
+}
+
+.pakket .padding-top {
+    margin-top: 1em; 
+    font-weight: bold;
+}
+
+.pakket button {
+    margin-top: auto;
+    width: 100%;
+    padding: 0.75em;
+    background: #1b3c55;
+    color: white;
+    border: none;
+    border-radius: 0.5em;
+}
+
+.pakket button:hover {
+    background: #102532;
+}
+
+.speciale-padding {
+    padding: 1em 2em 1em;
+}
+
+@media (max-width: 992px) {
+    .pakketten {
+        gap: 1.25em;
+    }
+}
+
+@media (max-width: 804px) {
+    .title-image-top {
+        flex-direction: column;
+        text-align: center;
+    }
+    .title-image-top h1 {
+        font-size: 2.4em;
+    }
+}
+
+@media (max-width: 768px) {
+    .pakket {
+        width: 90%;
+        max-width: 350px;
+    }
+    .title-image-top h1 {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 480px) {
+    .title-image-top h1 {
+        font-size: 26px;
+    }
+    body>p {
+        font-size: 1em;
+        padding: 0 10px;
+    }
+}
+
+@media (max-width: 800px) {
+    .section-contact {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-image {
+        width: 100%;
+    }
+
+    .contact-info h1 {
+        font-size: 2.3em;
+    }
+}
+
+@media (min-width: 992px) {
+    .pakket:hover {
+        transform: translateY(-30px);
+    }
+}
