@@ -1,5 +1,19 @@
+:root {
+  --color-background: #faf7f3;
+  --color-heading: #383238;
+  --color-subheading: #1e1e1e;
+  --color-text: #222;
+  --color-button: #d1b385;
+  --color-button-hover: #c3a372;
+  --color-border: #ddd;
+  --color-white: #ffffff;
+
+  --font-heading: "Kedebideri", sans-serif;
+  --font-body: "Montserrat", sans-serif;
+}
+
 body {
-    background-color: #faf7f3;
+    background-color: var(--color-background);
 }
 
 .contact-section {
@@ -7,9 +21,9 @@ body {
 }
 
 h1 {
-    font-family: "Kedebideri", sans-serif;
+    font-family: var(--font-heading);
     font-weight: 500;
-    color: #383238;
+    color: var(--color-heading);
 }
 
 .contact-container {
@@ -29,7 +43,7 @@ h1 {
 .contact-text h2 {
     font-size: 2em;
     margin-bottom: 1em;
-    color: #1e1e1e;
+    color: var(--color-subheading);
     font-weight: 700;
 }
 
@@ -37,7 +51,7 @@ h1 {
     font-size: 1.1em;
     line-height: 1.7;
     margin-bottom: 1.5em;
-    color: #222;
+    color: var(--color-text);
 }
 
 .mail-link {
@@ -45,7 +59,6 @@ h1 {
     font-size: 1.1em;
     font-weight: 600;
     margin-bottom: 1em;
-    color: #0d3b66;
     text-decoration: none;
 }
 
@@ -68,8 +81,8 @@ h1 {
 
 .form-section {
     padding: 3em 1.5em;
-    background: #faf7f2;
-    font-family: "Montserrat", sans-serif;
+    background: var(--color-background);
+    font-family: var(--font-body);
 }
 
 .form-container {
@@ -87,7 +100,7 @@ h1 {
 .contact-form h2 {
     font-size: 2em;
     margin-bottom: 1em;
-    color: #1e1e1e;
+    color: var(--color-subheading);
 }
 
 .contact-form label {
@@ -101,9 +114,9 @@ h1 {
     width: 95%;
     padding: 0.8em;
     font-size: 1em;
-    border: 1px solid #ddd;
+    border: 1px solid var(--color-border);
     border-radius: 0.5em;
-    background: white;
+    background: var(--color-white);
 }
 
 .contact-form textarea {
@@ -113,8 +126,8 @@ h1 {
 
 .send-btn {
     margin-top: 2em;
-    background: #d1b385;
-    color: #1e1e1e;
+    background: var(--color-button);
+    color: var(--color-subheading);
     padding: 1em 2em;
     font-size: 1.2em;
     border: none;
@@ -125,7 +138,7 @@ h1 {
 }
 
 .send-btn:hover {
-    background: #c3a372;
+    background: var(--color-button-hover);
 }
 
 .map-block {
@@ -137,7 +150,7 @@ h1 {
 .map-block iframe {
     width: 100%;
     height: 45em;
-    border: 0.5em solid white;
+    border: 0.5em solid var(--color-white);
     border-radius: 0.3em;
     box-shadow: 0 0.4em 1.2em rgba(0,0,0,0.15);
 }

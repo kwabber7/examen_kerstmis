@@ -1,5 +1,13 @@
+:root {
+  --color-footer-bg: #fdf3e6;
+  --color-footer-border: #c8c8c8;
+  --color-footer-text: #000000;
+  
+  --font-footer: "Montserrat", sans-serif;
+}
+
 .footer {
-    background-color: #fdf3e6;
+    background-color: var(--color-footer-bg);
     padding: 2em 2em;
     margin-top: 3em;
     display: flex;
@@ -8,7 +16,8 @@
     gap: 2em;
     text-align: center;
     font-size: 1em;
-    border-top: solid #c8c8c8;
+    border-top: solid var(--color-footer-border);
+    font-family: var(--font-footer);
 }
 
 .footer-section {
@@ -34,7 +43,7 @@
 
 .footer-section a {
     text-decoration: none;
-    color: black;
+    color: var(--color-footer-text);
 }
 
 .footer-section a:hover {

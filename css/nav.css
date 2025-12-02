@@ -1,6 +1,13 @@
+:root {
+  --color-navbar-bg: #cfcfcf;
+  --color-link: #000000;
+
+  --font-body: Arial, sans-serif;
+}
+
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
+    font-family: var(--font-body);
     font-size: 1em;
 }
 
@@ -8,7 +15,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #cfcfcf;
+    background-color: var(--color-navbar-bg);
     padding: 0.6em 2.5em; 
     position: relative;
 }
@@ -31,7 +38,7 @@ body {
 
 .nav-links li a {
     text-decoration: none;
-    color: black;
+    color: var(--color-link);
     font-size: 1.2em; 
     font-weight: 500;
 }
@@ -64,7 +71,7 @@ body {
         top: 5em; 
         left: 0;
         width: 100%;
-        background-color: #cfcfcf;
+        background-color: var(--color-navbar-bg);
         padding: 1.25em 0; 
         gap: 1.6em;
         text-align: center;

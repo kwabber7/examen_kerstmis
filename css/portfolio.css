@@ -1,16 +1,26 @@
+:root {
+  --color-background: #faf7f3;
+  --color-card-bg: #000000;
+  --color-card-text: #ffffff;
+  --color-card-info-bg: #111111;
+  --color-heading: #383238;
+
+  --font-heading: "Kedebideri", sans-serif;
+}
+
 * {
     margin: 0;
     padding: 0;
 }
 
 body {
-    background: #faf7f3;
+    background: var(--color-background);
 }
 
 h1 {
-    font-family: "Kedebideri", sans-serif;
+    font-family: var(--font-heading);
     font-weight: 500;
-    color: #383238;
+    color: var(--color-heading);
     padding: 1em 2em 1em;
 }
 
@@ -24,8 +34,8 @@ h1 {
 
 .card {
     width: 25em;
-    background: #000;
-    color: #fff;
+    background: var(--color-card-bg);
+    color: var(--color-card-text);
     overflow: hidden;
     border-radius: 8px;
 }
@@ -38,7 +48,7 @@ h1 {
 
 .card-info {
     padding: 1em;
-    background: #111;
+    background: var(--color-card-info-bg);
 }
 
 .card-info h3 {
@@ -75,7 +85,7 @@ h1 {
 
 .card-info {
     padding: 1em;
-    background: #111;
+    background: var(--color-card-info-bg);
 }
 
 .card-info h3 {
@@ -94,7 +104,6 @@ h1 {
     font-weight: 600;
     margin-bottom: 0.3em;
 }
-
 
 @media (max-width: 900px) {
     .card {
