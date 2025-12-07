@@ -77,8 +77,7 @@ h1 {
     margin-bottom: 2em;
 }
 
-.btn-contact,
-.contact button {
+.btn-contact {
     display: inline-block;
     padding: 1em 3em;
     border: 0.1em solid #ccc; 
@@ -89,15 +88,17 @@ h1 {
     letter-spacing: 0.13em; 
     border-radius: 0.25em; 
     margin: 1.5em 0 5em;
+    text-align: center;
+    text-decoration: none;
     transition: background 0.5s, color 0.5s;
     cursor: pointer;
 }
 
-.btn-contact:hover,
-.contact button:hover {
+.btn-contact:hover {
     background: var(--color-btn-hover-bg);
     color: var(--color-btn-hover-text);
 }
+
 
 .contact-image {
     flex: 1 1 55%;

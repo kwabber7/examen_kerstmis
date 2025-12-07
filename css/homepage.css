@@ -32,6 +32,9 @@ body {
     border-radius: 4px;
     margin:  1.5em 0 5em;
     transition: 0.5s;
+    text-decoration: none; 
+    text-align: center;    
+    cursor: pointer;
 }
 
 .button:hover {
@@ -74,7 +77,14 @@ p {
 
     .upper_part {
         display: flex;
-        flex: 4fr 5fr;
+    }
+
+    .upper_part > div:first-child {
+        flex: 4;
+    }
+
+    .upper_part > div:last-child {
+        flex: 5;
     }
 
     .logo_website_body {
@@ -84,7 +94,15 @@ p {
 
     .lower_part {
         display: flex;
-        flex: 5fr 4fr;
         align-items: center;
     }
+
+    .lower_part > div:first-child {
+        flex: 5;
+    }
+
+    .lower_part > div:last-child {
+        flex: 4;
+    }
 }
+

@@ -1,11 +1,11 @@
 :root {
-  --color-background: #faf7f3;
-  --color-card-bg: #000000;
-  --color-card-text: #ffffff;
-  --color-card-info-bg: #111111;
-  --color-heading: #383238;
+    --color-background: #faf7f3;
+    --color-card-bg: #000000;
+    --color-card-text: #ffffff;
+    --color-card-info-bg: #111111;
+    --color-heading: #383238;
 
-  --font-heading: "Kedebideri", sans-serif;
+    --font-heading: "Kedebideri", sans-serif;
 }
 
 * {
@@ -17,7 +17,8 @@ body {
     background: var(--color-background);
 }
 
-h1 {
+h1,
+h2 {
     font-family: var(--font-heading);
     font-weight: 500;
     color: var(--color-heading);
