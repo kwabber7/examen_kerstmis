@@ -1,24 +1,17 @@
 <!DOCTYPE html>
-<html lang="nl">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Homepagina</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
-        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Kedebideri:wght@400;500;600;700;800;900&display=swap"
-        rel="stylesheet">
+    <link rel="shortcut icon" href="img/logo_ra_captur.png" type="image/x-icon">
+    <title>overzicht boekinge</title>
     <link rel="stylesheet" href="css/nav.css">
     <link rel="stylesheet" href="css/footer.css">
-    <link rel="stylesheet" href="css/homepage.css">
+    <link rel="stylesheet" href="css/ovh_boekingen.css">
 </head>
 
 <body>
-
     <header>
         <nav class="navbar">
             <div class="logo">
@@ -29,7 +22,7 @@
             <label for="menu-toggle" class="menu-icon">&#9776;</label>
 
             <ul class="nav-links">
-                <li><a href="index.html"><i><b>Home</b></i></a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="portfolio.html">Portfolio</a></li>
                 <li><a href="prijzen_pakketen.html">Prijzen & Pakketten</a></li>
                 <li><a href="contacteer_ons.html">Contacteer ons</a></li>
@@ -37,34 +30,36 @@
         </nav>
     </header>
 
-    <section class="upper_part">
-        <div class="intro_homepagina">
-            <img class="logo_website_body" src="img/logo_ra_captur.png" alt="Logo">
-            <h1>Raf angeli <br> capture</h1>
-            <p>Trouwfotografie</p>
-            <a href="contacteer_ons.html" class="button">E-MAIL ONS</a>
-        </div>
-        <div class="image_field">
-            <img src="img/wedding-couple.jpg" alt="couple at a wedding">
-        </div>
-    </section>
+    <main>
 
-    <section class="lower_part">
-        <div class="image_field">
-            <img src="img/wedding_plate.jpg" alt="wedding plate">
+        <h1>Boekingen Overzicht</h1>
+
+        <div class="stats">
+            <p id="aantal"></p>
+            <p id="omzet"></p>
         </div>
-        <div class="intro_homepagina">
-            <h1>over <br> ra capture</h1>
-            <p>Wij zijn een klein team gevestigd in Waterland. We leggen de magische momenten van bruiloften al meer dan
-                tien jaar vast. <br><br>We houden het graag simpel, creatief en natuurlijk, gedenkwaardig.</p>
-        </div>
-    </section>
+
+        <select id="sorteren">
+            <option value="laag">
+                Prijs laag → hoog
+            </option>
+
+            <option value="hoog">
+                Prijs hoog → laag
+            </option>
+        </select>
+
+        <div id="boekingen"></div>
+
+    </main>
+
+    <script src="js/overzicht.js"></script>
 
     <footer class="footer">
         <div class="footer-section">
             <h3><i class="fa-solid fa-link"></i> Snel naar</h3>
             <ul>
-                <li><a href="index.html"><i><b>Home</b></i></a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="portfolio.html">Portfolio</a></li>
                 <li><a href="prijzen_pakketen.html">Prijzen</a></li>
                 <li><a href="contacteer_ons.html">Contact</a></li>
@@ -96,7 +91,6 @@
                 KvK: 00000000 </p>
         </div>
     </footer>
-
 </body>
 
 </html>

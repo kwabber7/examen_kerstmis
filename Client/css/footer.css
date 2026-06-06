@@ -3,7 +3,11 @@
   --color-footer-border: #c8c8c8;
   --color-footer-text: #000000;
   
-  --font-footer: "Montserrat", sans-serif;
+  --font-footer: 'Comic Sans MS', cursive;
+}
+
+body {
+    font-family: 'Comic Sans MS', cursive;
 }
 
 .footer {

@@ -10,13 +10,13 @@
   --color-pakket-btn-bg: #1b3c55;
   --color-pakket-btn-hover-bg: #102532;
 
-  --font-body: Arial, sans-serif;
-  --font-heading: "Kedebideri", sans-serif;
+  --font-body: 'Comic Sans MS', cursive;
+  --font-heading: 'Comic Sans MS', cursive;
 
   --font-large: 3em;
   --font-medium: 1.2em;
   --max-width: 100%;
-}
+} 
 
 body {
     margin: 0;
@@ -189,13 +189,16 @@ section+p {
 }
 
 .pakket button {
-    margin-top: auto;
     width: 100%;
     padding: 0.75em;
     background: var(--color-pakket-btn-bg);
     color: var(--color-btn-hover-text);
     border: none;
     border-radius: 0.5em;
+}
+
+.pakket a {
+    margin-top: auto;
 }
 
 .pakket button:hover {

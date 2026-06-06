@@ -1,13 +1,11 @@
 :root {
   --color-navbar-bg: #cfcfcf;
   --color-link: #000000;
-
-  --font-body: Arial, sans-serif;
 }
 
 body {
     margin: 0;
-    font-family: var(--font-body);
+    font-family: 'Comic Sans MS', cursive;
     font-size: 1em;
 }
 

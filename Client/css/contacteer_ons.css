@@ -8,12 +8,13 @@
   --color-border: #ddd;
   --color-white: #ffffff;
 
-  --font-heading: "Kedebideri", sans-serif;
-  --font-body: "Montserrat", sans-serif;
+  --font-heading: 'Comic Sans MS', cursive;
+  --font-body: 'Comic Sans MS', cursive;
 }
 
 body {
     background-color: var(--color-background);
+    font-family: 'Comic Sans MS', cursive;
 }
 
 .contact-section {

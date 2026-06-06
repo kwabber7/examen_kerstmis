@@ -1,0 +1,179 @@
+
+body {
+    background: #f8f5f1;
+}
+
+main {
+    max-width: 900px;
+    margin: 60px auto;
+    padding: 20px;
+}
+
+main h1 {
+    text-align: center;
+    margin-bottom: 40px;
+    color: #6f7c6e;
+    font-size: 3rem;
+    letter-spacing: 2px;
+}
+
+/* BOEKINGSKAART */
+
+.boek-card {
+    background: white;
+    padding: 40px;
+    border-radius: 25px;
+    box-shadow:0 10px 30px rgba(0, 0, 0, .08);
+}
+
+/* TITEL */
+
+.boek-card h2 {
+    text-align: center;
+    color: #6f7c6e;
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+/* PRIJS */
+
+.prijs {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bold;
+    color: #9b8563;
+    margin-bottom: 35px;
+}
+
+/* EXTRA OPTIES */
+
+.boek-card h3 {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    color: #6f7c6e;
+}
+
+.boek-card label {
+    display: block;
+    margin-bottom: 15px;
+    font-size: 1rem;
+}
+
+/* INPUTS */
+
+.boek-card input[type="text"],
+.boek-card input[type="tel"],
+.boek-card input[type="number"] {
+    width: 100%;
+    padding: 14px;
+    margin-top: 8px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    border: 1px solid #d5d5d5;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+.boek-card input:focus {
+    outline: none;
+    border-color: #6f7c6e;
+    box-shadow:0 0 10px rgba(111, 124, 110, .2);
+}
+
+/* CHECKBOXEN */
+
+input[type="checkbox"] {
+    margin-right: 10px;
+    transform: scale(1.2);
+}
+
+/* LIJN */
+
+hr {
+    border: none;
+    border-top: 1px solid #ece7df;
+    margin: 35px 0;
+}
+
+/* BOEK KNOP */
+
+#boek {
+    width: 100%;
+    margin-top: 25px;
+    padding: 15px;
+    background: #555555;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: .3s;
+}
+
+#boek:hover {
+    background: #363636;
+    transform: translateY(-2px);
+}
+
+.overzicht-btn {
+    width: 100%;
+    margin-top: 15px;
+    padding: 15px;
+    background: #555555;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: .3s;
+}
+
+.overzicht-btn:hover {
+    background: #363636;
+    transform: translateY(-2px);
+}
+
+/* popup */
+
+.foutmelding {
+    color: red;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+/* ANIMATIE */
+
+@keyframes popupOpen {
+
+    from {
+        opacity: 0;
+        transform: scale(.8);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 768px) {
+
+    main {
+        padding: 15px;
+    }
+
+    main h1 {
+        font-size: 2rem;
+    }
+
+    .boek-card {
+        padding: 25px;
+    }
+
+    .prijs {
+        font-size: 2rem;
+    }
+}

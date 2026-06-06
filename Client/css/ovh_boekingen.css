@@ -1,0 +1,190 @@
+body {
+    background: #f8f5f1;
+}
+
+/* PAGINA */
+
+main {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 20px;
+}
+
+main h1 {
+    text-align: center;
+    color: #6f7c6e;
+    font-size: 3rem;
+    margin-bottom: 40px;
+    letter-spacing: 2px;
+}
+
+/* STATS */
+
+.stats {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+
+.stats p {
+    background: white;
+    padding: 20px 30px;
+    border-radius: 15px;
+
+    box-shadow:
+        0 5px 20px rgba(0, 0, 0, .08);
+
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #6f7c6e;
+}
+
+/* SORTEREN */
+
+#sorteren {
+    display: block;
+
+    margin: 0 auto 40px auto;
+
+    padding: 12px 20px;
+
+    border-radius: 12px;
+    border: 1px solid #d7d7d7;
+
+    background: white;
+
+    font-size: 1rem;
+}
+
+/* BOEKINGEN */
+
+#boekingen {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+/* BOEKING CARD */
+
+.boeking-card {
+    background: white;
+
+    padding: 35px;
+
+    border-radius: 25px;
+
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, .08);
+
+    transition: .3s ease;
+}
+
+.boeking-card:hover {
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 15px 35px rgba(0, 0, 0, .12);
+}
+
+/* TITEL */
+
+.boeking-card h2 {
+    color: #6f7c6e;
+
+    margin-bottom: 20px;
+
+    font-size: 2rem;
+
+    border-bottom: 2px solid #ece7df;
+
+    padding-bottom: 15px;
+}
+
+/* KLANT INFO */
+
+.boeking-card p {
+    margin-bottom: 10px;
+    line-height: 1.7;
+}
+
+/* SUB TITELS */
+
+.boeking-card h3 {
+    margin-top: 25px;
+    margin-bottom: 12px;
+
+    color: #9b8563;
+}
+
+/* LIJSTEN */
+
+.boeking-card ul {
+    margin-left: 20px;
+    margin-bottom: 15px;
+}
+
+.boeking-card li {
+    margin-bottom: 8px;
+    line-height: 1.5;
+}
+
+/* PRIJS */
+
+.prijs {
+    margin-top: 25px;
+
+    font-size: 2rem;
+    font-weight: bold;
+
+    color: #6f7c6e;
+}
+
+/* KNOP */
+
+.boeking-card button {
+    margin-top: 25px;
+
+    background: #b66d6d;
+    color: white;
+
+    border: none;
+
+    padding: 12px 20px;
+
+    border-radius: 10px;
+
+    cursor: pointer;
+
+    transition: .3s;
+}
+
+.boeking-card button:hover {
+    background: #934f4f;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 768px) {
+
+    main h1 {
+        font-size: 2rem;
+    }
+
+    .stats {
+        flex-direction: column;
+    }
+
+    .boeking-card {
+        padding: 20px;
+    }
+
+    .boeking-card h2 {
+        font-size: 1.5rem;
+    }
+
+    .prijs {
+        font-size: 1.5rem;
+    }
+}
