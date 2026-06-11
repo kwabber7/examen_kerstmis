@@ -1,22 +1,22 @@
 :root {
-  --color-bg: #faf7f3;
-  --color-text: #1c1c1c;
-  --color-heading: #383238;
-  --color-btn-bg: #faf7f3;  
-  --color-btn-text: #333333;
-  --color-btn-hover-bg: #000000;
-  --color-btn-hover-text: #ffffff;
-  --color-pakket-bg: #f4e8c6;
-  --color-pakket-btn-bg: #1b3c55;
-  --color-pakket-btn-hover-bg: #102532;
+    --color-bg: #faf7f3;
+    --color-text: #1c1c1c;
+    --color-heading: #383238;
+    --color-btn-bg: #faf7f3;
+    --color-btn-text: #333333;
+    --color-btn-hover-bg: #000000;
+    --color-btn-hover-text: #ffffff;
+    --color-pakket-bg: #f4e8c6;
+    --color-pakket-btn-bg: #1b3c55;
+    --color-pakket-btn-hover-bg: #102532;
 
-  --font-body: 'Comic Sans MS', cursive;
-  --font-heading: 'Comic Sans MS', cursive;
+    --font-body: 'Comic Sans MS', cursive;
+    --font-heading: 'Comic Sans MS', cursive;
 
-  --font-large: 3em;
-  --font-medium: 1.2em;
-  --max-width: 100%;
-} 
+    --font-large: 3em;
+    --font-medium: 1.2em;
+    --max-width: 100%;
+}
 
 body {
     margin: 0;
@@ -80,13 +80,13 @@ h1 {
 .btn-contact {
     display: inline-block;
     padding: 1em 3em;
-    border: 0.1em solid #ccc; 
+    border: 0.1em solid #ccc;
     background-color: var(--color-btn-bg);
     color: var(--color-btn-text);
     font-family: var(--font-body);
-    font-size: 0.75em; 
-    letter-spacing: 0.13em; 
-    border-radius: 0.25em; 
+    font-size: 0.75em;
+    letter-spacing: 0.13em;
+    border-radius: 0.25em;
     margin: 1.5em 0 5em;
     text-align: center;
     text-decoration: none;
@@ -115,13 +115,13 @@ h1 {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 2.5em; 
-    margin-bottom: 3.125em; 
+    gap: 2.5em;
+    margin-bottom: 3.125em;
 }
 
 .title-image-top img {
     max-width: 60%;
-    border-radius: 0.5em; 
+    border-radius: 0.5em;
     object-fit: cover;
 }
 
@@ -131,20 +131,20 @@ h1 {
 
 .contact {
     text-align: center;
-    margin-bottom: 2.5em; 
+    margin-bottom: 2.5em;
 }
 
 .contact p {
     font-size: 1em;
-    margin-bottom: 1.25em; 
+    margin-bottom: 1.25em;
     line-height: 1.6;
 }
 
 section+p {
     text-align: center;
     font-size: 1.1em;
-    max-width: 800px; 
-    margin: 0 auto 3.75em; 
+    max-width: 800px;
+    margin: 0 auto 3.75em;
     line-height: 1.6;
     font-style: italic;
 }
@@ -164,27 +164,27 @@ section+p {
 .pakket {
     background: var(--color-pakket-bg);
     width: 300px;
-    padding: 1.5em; 
+    padding: 1.5em;
     display: flex;
     flex-direction: column;
-    border-radius: 1em; 
-    box-shadow: 0 0.5em 1.125em rgba(0, 0, 0, 0.15); 
+    border-radius: 1em;
+    box-shadow: 0 0.5em 1.125em rgba(0, 0, 0, 0.15);
     text-align: left;
     transition: transform 0.3s;
 }
 
 .pakket ul {
     padding: 0;
-    margin: 1.25em 0; 
+    margin: 1.25em 0;
     list-style: none;
 }
 
 .pakket li {
-    margin-bottom: 0.4em; 
+    margin-bottom: 0.4em;
 }
 
 .pakket .padding-top {
-    margin-top: 1em; 
+    margin-top: 1em;
     font-weight: bold;
 }
 
@@ -209,6 +209,15 @@ section+p {
     padding: 1em 2em 1em;
 }
 
+.boek-btn {
+    padding: 0.75em;
+    background: var(--color-pakket-btn-bg);
+    color: var(--color-btn-hover-text);
+    border-radius: 0.5em;
+    text-decoration: none;
+    text-align: center;
+}
+
 @media (max-width: 992px) {
     .pakketten {
         gap: 1.25em;
@@ -220,6 +229,7 @@ section+p {
         flex-direction: column;
         text-align: center;
     }
+
     .title-image-top h1 {
         font-size: 2.4em;
     }
@@ -230,6 +240,7 @@ section+p {
         width: 90%;
         max-width: 350px;
     }
+
     .title-image-top h1 {
         font-size: 30px;
     }
@@ -239,6 +250,7 @@ section+p {
     .title-image-top h1 {
         font-size: 26px;
     }
+
     body>p {
         font-size: 1em;
         padding: 0 10px;

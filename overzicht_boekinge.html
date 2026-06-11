@@ -1,11 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="nl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="img/logo_ra_captur.png" type="image/x-icon">
-    <title>overzicht boekinge</title>
+    <title>Overzicht Boekingen | Angeli Capture</title>
     <link rel="stylesheet" href="css/nav.css">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/ovh_boekingen.css">
@@ -17,47 +16,50 @@
             <div class="logo">
                 <a href="index.html"><img src="img/logo_ra_captur.png" alt="Logo"></a>
             </div>
-
             <input type="checkbox" id="menu-toggle">
-            <label for="menu-toggle" class="menu-icon">&#9776;</label>
-
+            <label for="menu-toggle" class="menu-icon">
+                &#9776;
+            </label>
             <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="portfolio.html">Portfolio</a></li>
-                <li><a href="prijzen_pakketen.html">Prijzen & Pakketten</a></li>
+                <li><a href="prijzen_pakketen.html">Prijzen &amp; Pakketten</a></li>
                 <li><a href="contacteer_ons.html">Contacteer ons</a></li>
             </ul>
         </nav>
     </header>
-
     <main>
-
         <h1>Boekingen Overzicht</h1>
-
         <div class="stats">
             <p id="aantal"></p>
             <p id="omzet"></p>
         </div>
-
-        <select id="sorteren">
-            <option value="laag">
-                Prijs laag → hoog
-            </option>
-
-            <option value="hoog">
-                Prijs hoog → laag
-            </option>
-        </select>
-
+        <div class="filters">
+            <div class="filter-groep">
+                <label for="sorteren">Sorteren:</label>
+                <select id="sorteren">
+                    <option value="laag">Prijs laag → hoog</option>
+                    <option value="hoog">Prijs hoog → laag</option>
+                </select>
+            </div>
+            <div class="filter-groep">
+                <label for="filter">Filter:</label>
+                <select id="filter">
+                    <option value="alles">Alle pakketten</option>
+                    <option value="Basic Pakket">Basic Pakket</option>
+                    <option value="Premium Pakket">Premium Pakket</option>
+                    <option value="Luxury Pakket">Luxury Pakket</option>
+                    <option value="Aangepast Pakket">Aangepast Pakket</option>
+                </select>
+            </div>
+        </div>
         <div id="boekingen"></div>
-
     </main>
 
     <script src="js/overzicht.js"></script>
-
     <footer class="footer">
         <div class="footer-section">
-            <h3><i class="fa-solid fa-link"></i> Snel naar</h3>
+            <h2><i class="fa-solid fa-link"></i>Snel naar</h2>
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="portfolio.html">Portfolio</a></li>
@@ -67,28 +69,54 @@
         </div>
 
         <div class="footer-section">
-            <h3>Socials</h3>
+            <h2>Socials</h2>
             <ul>
-                <li><i class="fa-brands fa-instagram"></i><a href="#">Instagram</a></li>
-                <li><i class="fa-brands fa-facebook"></i><a href="#">Facebook</a></li>
-                <li><i class="fa-brands fa-pinterest"></i><a href="#">Pinterest</a></li>
+                <li>
+                    <i class="fa-brands fa-instagram"></i>
+                    <a href="#">Instagram</a>
+                </li>
+                <li>
+                    <i class="fa-brands fa-facebook"></i>
+                    <a href="#">Facebook</a>
+                </li>
+                <li>
+                    <i class="fa-brands fa-pinterest"></i>
+                    <a href="#">Pinterest</a>
+                </li>
             </ul>
         </div>
 
         <div class="footer-section">
-            <h3>Contact</h3>
+            <h2>Contact</h2>
             <ul>
-                <li><i class="fa-solid fa-envelope-open"></i><strong>E-mail:</strong><br><a
-                        href="mailto:info@angelicapture.nl">info@angelicapture.nl</a></li>
-                <li><i class="fa-solid fa-phone"></i><strong>Telefoon:</strong><br>06 123 456 78</li>
-                <li><i class="fa-brands fa-whatsapp"></i><strong>WhatsApp:</strong><br>Direct bericht sturen</li>
+                <li>
+                    <i class="fa-solid fa-envelope-open"></i>
+                    <strong>E-mail:</strong>
+                    <br>
+                    <a href="mailto:info@angelicapture.nl">info@angelicapture.nl</a>
+                </li>
+                <li>
+                    <i class="fa-solid fa-phone"></i>
+                    <strong>Telefoon:</strong>
+                    <br>
+                    06 123 456 78
+                </li>
+                <li>
+                    <i class="fa-brands fa-whatsapp"></i>
+                    <strong>WhatsApp:</strong>
+                    <br>
+                    Direct bericht sturen
+                </li>
             </ul>
         </div>
-
         <div class="footer-bottom">
-            <p>© 2025 Angeli Capture<br>
-                Alle rechten voorbehouden.<br>
-                KvK: 00000000 </p>
+            <p>
+                © 2025 Angeli Capture
+                <br>
+                Alle rechten voorbehouden.
+                <br>
+                KvK: 00000000
+            </p>
         </div>
     </footer>
 </body>

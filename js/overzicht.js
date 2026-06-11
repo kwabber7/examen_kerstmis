@@ -14,11 +14,22 @@ function render() {
 
     lijst.innerHTML = "";
 
+    const filter =
+        document.getElementById("filter").value;
+
+    const gefilterdeBoekingen =
+        filter === "alles"
+            ? boekingen
+            : boekingen.filter(
+                boeking =>
+                    boeking.pakketNaam === filter
+            );
+
     aantal.textContent =
-        `Aantal boekingen: ${boekingen.length}`;
+        `Aantal boekingen: ${gefilterdeBoekingen.length}`;
 
     const totaleOmzet =
-        boekingen.reduce(
+        gefilterdeBoekingen.reduce(
             (som, boeking) => som + boeking.prijs,
             0
         );
@@ -26,7 +37,7 @@ function render() {
     omzet.textContent =
         `Totale omzet: €${totaleOmzet}`;
 
-    boekingen.forEach(boeking => {
+    gefilterdeBoekingen.forEach(boeking => {
 
         lijst.innerHTML += `
         <div class="boeking-card">
@@ -121,6 +132,14 @@ document
         }
 
         render();
+    });
+
+document
+    .getElementById("filter")
+    .addEventListener("change", () => {
+
+        render();
+
     });
 
 render();

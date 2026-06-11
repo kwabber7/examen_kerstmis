@@ -208,11 +208,16 @@ document
         if (document.getElementById("snel").checked)
             extras.push("Snelle levering");
 
+        const pakketNaam =
+            extras.length > 0
+                ? "Aangepast Pakket"
+                : pakket.naam;
+
         const boeking = {
 
             id: Date.now(),
 
-            pakketNaam: pakket.naam,
+            pakketNaam: pakketNaam,
 
             inbegrepen: pakket.inbegrepen,
 
